@@ -3,15 +3,19 @@
 	<title>Sotetseg Maze Practice</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
-	<body>
-	<p align="center">
-		r: reset clicked tiles; m: save/load maze seed; n: generate new maze
-	</p>
-	<div class="center-wrapper-parent">
-		<div class="canvas-wrapper">
-			<canvas id="sotetseg-maze" tabindex="1"></canvas>
-		</div>
+<body>
+<div class="center-wrapper-parent">
+	<div class="canvas-wrapper">
+		<p align="center" id="info">0.0 seconds (0 ticks)</p>
+		<canvas id="sotetseg-maze" tabindex="1"></canvas>
+		<p align="center">
+			<button onclick="reset()">Reset</button>
+			<button onclick="newSession()">New Maze</button>
+			<button onclick="editSeed()">Edit Seed</button>
+			<button onclick="showAbout()">About (v0.3)</button> 
+		</p>
 	</div>
-	<script type="text/javascript" src="sotetseg.js"></script>
+</div>
+<script type="text/javascript" src="sotetseg.js"></script>
 </body>
 </html>

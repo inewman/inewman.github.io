@@ -2,22 +2,23 @@
 <head>
 	<title>Sotetseg Maze Practice</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta charset="utf-8"/>
 </head>
 <body>
 <div class="center-wrapper-parent">
 	<div class="canvas-wrapper">
 		<p align="center">
-			<div id="target" align="center">Best possible time: 0.0 seconds (0 ticks)</div>
-			<div id="timer" align="center">Your time: 0.0 seconds (0 ticks, 0 wasted)</div>
+			<div id="par" align="center">Best possible time: 0.0 seconds (0 ticks)</div>
+			<div id="timer" align="center">Your time: 0.0 seconds (0 ticks, 0 stalled)</div>
 		</p>
 		<p align="center"></p>
 		<canvas id="sotetseg-maze" tabindex="1"></canvas>
 		<p align="center">
 			<button onclick="reset()">Reset</button>
 			<button onclick="newSession()">New Maze</button>
+			<button onclick="drawSolution()">Show Solution</button>
 			<button onclick="editSeed()">Edit Seed</button>
-			<button onclick="showAbout()">About (v0.4)</button> 
-			<!-- <button onclick="drawText()">DRAWTEXT</button>  -->
+			<button onclick="showAbout()">About (v0.5)</button>
 		</p>
 	</div>
 </div>

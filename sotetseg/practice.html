@@ -6,13 +6,18 @@
 <body>
 <div class="center-wrapper-parent">
 	<div class="canvas-wrapper">
-		<p align="center" id="info">0.0 seconds (0 ticks, 0 wasted)</p>
+		<p align="center">
+			<div id="target" align="center">Best possible time: 0.0 seconds (0 ticks)</div>
+			<div id="timer" align="center">Your time: 0.0 seconds (0 ticks, 0 wasted)</div>
+		</p>
+		<p align="center"></p>
 		<canvas id="sotetseg-maze" tabindex="1"></canvas>
 		<p align="center">
 			<button onclick="reset()">Reset</button>
 			<button onclick="newSession()">New Maze</button>
 			<button onclick="editSeed()">Edit Seed</button>
-			<button onclick="showAbout()">About (v0.3)</button> 
+			<button onclick="showAbout()">About (v0.4)</button> 
+			<!-- <button onclick="drawText()">DRAWTEXT</button>  -->
 		</p>
 	</div>
 </div>
